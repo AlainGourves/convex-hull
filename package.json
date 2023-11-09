@@ -1,0 +1,27 @@
+{
+  "name": "convex-hull",
+  "version": "1.0.0",
+  "description": "JS implementation of the Graham scan algorithm to find the convex hull of a set of points.",
+  "main": "sketch.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlainGourves/convex-hull/"
+  },
+  "keywords": [
+    "convexhull",
+    "convex-hull"
+  ],
+  "author": "Alain Gourvès",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlainGourves/convex-hull/issues"
+  },
+  "homepage": "https://github.com/AlainGourves/convex-hull/"
+}
