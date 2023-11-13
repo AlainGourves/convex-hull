@@ -5,12 +5,14 @@ This library computes the [convex hull](https://en.wikipedia.org/wiki/Convex_hul
 
 It uses the [Graham scan](https://en.wikipedia.org/wiki/Graham_scan) algorithm.
 
+This code is largely inspired by this [Geeksforgeeks's post](https://www.geeksforgeeks.org/convex-hull-using-graham-scan/).
+
 
 ## Installation
 
 Copy `./lib/points.js` and `./lib/convexHull.js` files.
 
-Point objects
+Point are objects with `x` and `y` properties representing their coordinates.
 
 ## Usage
 
@@ -26,7 +28,7 @@ let points =[
 ];
 
 let hull = new ConvexHull(points);
-console.log(hull);
+console.log(hull.getPoints());
 ```
 Result :
 
@@ -38,7 +40,11 @@ Result :
   Point { x: 65, y: 21 }
 ]
 ```
+__Notes__:
+- The resulting points are ordered starting from the lowest left, then following the envelope clockwise.
+- The path is not closed (the last point is not the same as the first).
 
 ## The future
 
-Implement other algorithms, like [Quickhull](https://en.wikipedia.org/wiki/Quickhull).
+- Optimize the code by __interior elimination__ : find the farthest points in the NW, NE, SE & SW directions and eliminate the points inside the quadrilateral they defined (as these points cannot be on the hull).
+- Implement other algorithms, like [Quickhull](https://en.wikipedia.org/wiki/Quickhull).

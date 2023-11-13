@@ -1,14 +1,14 @@
 {
   "name": "convex-hull",
   "version": "1.0.0",
-  "description": "JS implementation of the Graham scan algorithm to find the convex hull of a set of points.",
-  "main": "sketch.js",
+  "description": "JS implementation of the Graham Scan algorithm to find the convex hull of a 2D set of points.",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
