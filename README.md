@@ -3,9 +3,13 @@
 
 This library computes the [convex hull](https://en.wikipedia.org/wiki/Convex_hull) of a set of points.
 
-It uses the [Graham scan](https://en.wikipedia.org/wiki/Graham_scan) algorithm.
+It uses the __Graham scan__ algorithm.
 
-This code is largely inspired by this [Geeksforgeeks's post](https://www.geeksforgeeks.org/convex-hull-using-graham-scan/).
+References:
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Graham_scan)
+- [Algorithm Archive](https://www.algorithm-archive.org/contents/graham_scan/graham_scan.html)
+- This code is largely inspired by this [Geeksforgeeks's post](https://www.geeksforgeeks.org/convex-hull-using-graham-scan/).
 
 
 ## Installation
@@ -44,7 +48,7 @@ __Notes__:
 - The resulting points are ordered starting from the lowest left, then following the envelope clockwise.
 - The path is not closed (the last point is not the same as the first).
 
-## The future
+## Ideas
 
-- Optimize the code by __interior elimination__ : find the farthest points in the NW, NE, SE & SW directions and eliminate the points inside the quadrilateral they defined (as these points cannot be on the hull).
+- Optimize the code by _interior elimination_ (or _quadrilateral culling_) : find the farthest points in the NW, NE, SE & SW directions and eliminate the points inside the quadrilateral they defined (as these points cannot be on the hull).
 - Implement other algorithms, like [Quickhull](https://en.wikipedia.org/wiki/Quickhull).
