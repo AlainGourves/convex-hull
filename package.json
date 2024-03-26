@@ -30,6 +30,6 @@
   "homepage": "https://github.com/AlainGourves/convex-hull/",
   "devDependencies": {
     "@babel/core": "^7.23.3",
-    "parcel": "latest"
+    "parcel": "^2.12.0"
   }
 }
